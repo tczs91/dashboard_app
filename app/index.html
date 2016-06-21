@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <title>Dashboard App</title>
   <!-- include angularJs CDN -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
   <!-- include jQuery CDN -->
   <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
   <!--  include ui-router CDN -->
-  <script src="js/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
   <!-- include bootstrape CDN -->
   <!-- Latest compiled and minified CSS -->
 
@@ -20,11 +21,14 @@
   <!-- include the user customized file css files -->
 
   <!-- include the user customized file js files -->
-
+  <script type="text/javascript" src="scripts/app.js"></script>
 
 </head>
 <body>
+  <div class="bodyContainer">
+        <div ui-view>
 
-
+        </div>
+    </div>
 </body>
 </html>
