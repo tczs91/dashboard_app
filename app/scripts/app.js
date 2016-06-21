@@ -7,3 +7,5 @@
  *
  * Main module of the application. Define the routing architecture for the app
  */
+
+ angular.module('dashApp', []);
