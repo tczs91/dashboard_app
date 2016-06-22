@@ -1,0 +1,15 @@
+<!--no need to embed ng-controller here, already relate controller and work.html in app.js--
+    ng-repeat="works in controller ">
+<!--    <ul ng-repeat="work in works" ng-controller="workController">-->
+    <div>
+        <ul id="{{work.id}}" class="col-md-4" ng-repeat="work in works">
+            <li><img class="img" src="{{work.image}}"></li>
+            <li>{{work.title}}</li>
+            <li>{{work.author}}</li>
+            <li>{{work.like}}</li>
+            <li>{{work.comment}}</li>
+            <li><button class="btn btn-link">Edit</button>
+                <button class="btn btn-link" data-modal="modal" data-target="#myModal">Delete</button>
+            </li> 
+        </ul>
+    </div>

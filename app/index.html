@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Dashboard App</title>
-</head>
-<body>
 
+<head>   
+ <!-- import angularJs -->
+ <script src="../bower_components/angular/angular.min.js"></script>
+ <!-- import jQuery -->
+ <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+ <!--  import ui-router -->
+ <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+ <!-- import bootstrape -->
+ <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+ <!--<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+ <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/work.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<!-- apply our angular app to our site -->
+
+<body ng-app="routerApp">
+    <!-- MAIN CONTENT -->
+    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+    <div class="container-fluid">
+        <div ui-view></div>
+    </div>
 </body>
+
 </html>
