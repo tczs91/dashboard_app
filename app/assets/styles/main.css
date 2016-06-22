@@ -1,0 +1,53 @@
+#headerLogo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -7px;
+}
+
+#btnLogOut {
+  margin-top: 10px;
+
+}
+
+.bodyDisp {
+  height: 100%;
+  width: 100%;
+}
+
+.bodyDisp .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+.bodyDisp .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+.bodyDisp .navbar-collapse.in {
+    overflow-x: visible;
+  }
+
+.bodyDisp .navbar
+{
+  max-width:300px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.bodyDisp .navbar-nav,
+.bodyDisp .navbar-nav > li,
+.bodyDisp .navbar-left,
+.bodyDisp .navbar-right,
+.bodyDisp .navbar-header
+{float:none !important;}
+
+.bodyDisp .navbar-right .dropdown-menu {left:0;right:auto;}
+.bodyDisp .navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+
