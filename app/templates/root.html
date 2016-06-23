@@ -1,68 +1,55 @@
 <div class="root_partial">
   <!-- header -->
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" id="headerMenu">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="assets/images/src/app/logo.png" id="headerLogo"></a>
+      <a class="navbar-brand" href="#"><img src="assets/images/src/app/logo.png" id="headerLogo"></img></a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="">user name</a></li>
-      <li><a href="">current time</a></li>
+      <li><a href="">{{username}}</a></li>
+      <li><a href="">{{currentDate | date:'MM/d/yyyy'}}</a></li>
     </ul>
     <button type="button" class="btn btn-default pull-right" id="btnLogOut">Log Out</button>
   </div>
 </nav>
   <!-- body display -->
   <div class="bodyDisp">
-    <nav class="navbar navbar-default" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Brand</a>
-  </div>
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li><a href="#">Separated link</a></li>
-          <li><a href="#">One more separated link</a></li>
-        </ul>
-      </li>
-    </ul>
-    <form class="navbar-form navbar-left" role="search">
-      <div class="form-group">
-        <input class="form-control" placeholder="Search" type="text">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Link</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+<!-- side menu test -->
+<div class="col-md-3" role="complementary">
+  <nav class="bs-docs-sidebar hidden-xs hidden-sm affix">
+    <ul class="nav bs-docs-sidenav" id="leftMenu">
+        <li>
+          <a ui-sref="root.overview"><div>
+          <img src="assets/images/src/app/logo.png"></img>
+          <p>Overview</p>
+          </div></a>
+        </li>
 
+        <li class="active">
+          <a ui-sref="root.work"><div>
+          <img src="assets/images/src/app/logo.png"></img>
+          <p>Work</p>
+          </div></a>
+        </li>
+
+        <li>
+          <a ui-sref="root.producer"><div>
+          <img src="assets/images/src/app/logo.png"></img>
+          <p>Producer</p>
+          </div></a>
+        </li>
+
+        <li>
+          <a ui-sref="root.contact"><div>
+          <img src="assets/images/src/app/logo.png"></img>
+          <p>Contact</p>
+          </div></a>
+        </li>
+    </ul>
+
+  </nav>
+</div>
   <div ui-view></div>
 
   </div>

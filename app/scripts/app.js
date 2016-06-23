@@ -20,11 +20,13 @@
         .state('login', {
             url: '/login',
             templateUrl: 'templates/login.html'
+            //controller: 'loginController'
         })
         //root view
         .state('root', {
             url: '/root',
-            templateUrl: 'templates/root.html'
+            templateUrl: 'templates/root.html',
+            controller: 'rootController'
         })
         //root.work view
         .state('root.work', {
@@ -38,20 +40,14 @@
         .state('root.overview', {
             url: '/overview',
             templateUrl: 'templates/overview.html',
-            controller: function($scope) {
-                $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
-            }
         })
         //root.producer view
         .state('root.producer', {
             url: '/producer',
             templateUrl: 'templates/producer.html',
-            controller: function($scope) {
-                $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
-            }
         })
         //root.contact view
-        .state('home.contact', {
+        .state('root.contact', {
             url: '/contact',
             templateUrl: 'templates/contact.html'
         })

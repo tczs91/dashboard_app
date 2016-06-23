@@ -1,3 +1,6 @@
+#headerMenu {
+margin-bottom: 0px;
+}
 #headerLogo {
   display: inline-block;
   vertical-align: middle;
@@ -6,48 +9,33 @@
 
 #btnLogOut {
   margin-top: 10px;
-
 }
 
-.bodyDisp {
-  height: 100%;
-  width: 100%;
+.bodyDisp #leftMenu img {
+  padding-right: 10px;
 }
 
-.bodyDisp .navbar-collapse {
-    height: auto;
-    border-top: 0;
-    box-shadow: none;
-    max-height: none;
-    padding-left:0;
-    padding-right:0;
-  }
-.bodyDisp .navbar-collapse.collapse {
-    display: block !important;
-    width: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-.bodyDisp .navbar-collapse.in {
-    overflow-x: visible;
-  }
-
-.bodyDisp .navbar
-{
-  max-width:300px;
-  margin-right: 0;
-  margin-left: 0;
+.bodyDisp #leftMenu li {
+  padding-right: 10px;
 }
 
-.bodyDisp .navbar-nav,
-.bodyDisp .navbar-nav > li,
-.bodyDisp .navbar-left,
-.bodyDisp .navbar-right,
-.bodyDisp .navbar-header
-{float:none !important;}
+.bodyDisp #leftMenu div p{
+  display: inline-block;
+}
 
-.bodyDisp .navbar-right .dropdown-menu {left:0;right:auto;}
-.bodyDisp .navbar-collapse .navbar-nav.navbar-right:last-child {
-    margin-right: 0;
+.bodyDisp #leftMenu div img {
+  display: inline-block;
+}
+
+.bodyDisp #leftMenu li:hover p{
+  color: white;
+}
+
+.bodyDisp #leftMenu li.active {
+  border-left: 2px solid red;
+}
+
+.bodyDisp #leftMenu li.active p{
+  color: red;
 }
 
