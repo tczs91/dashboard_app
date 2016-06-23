@@ -2,7 +2,7 @@
 // WORK CONTROLLER
 // Description: Define the following functionalities:
 // All the functionalities on the "Work" section to display items and filter them
-routerApp.controller('workController', function($scope,$http) {
+routerApp.controller('workController',['$scope','$http','$filter', function($scope,$http,$filter) {
     $http({
         method : "GET",
         //api is to find router folder in server
@@ -30,7 +30,6 @@ routerApp.controller('workController', function($scope,$http) {
 
     $scope.addsubmit = function() {
         var item = {
-//                image: '',
                 title: $scope.addtitle,
                 author: $scope.addauthor,
                 like: $scope.addlike,
@@ -51,5 +50,11 @@ routerApp.controller('workController', function($scope,$http) {
         $scope.works[$scope.indexedit].like=$scope.editlike;
         $scope.works[$scope.indexedit].comment=$scope.editcomment;
     }
+    $scope.orderByMe = function(x) {
+        $scope.myOrderBy = x;
+    }
+//    $scope.orderlike=function(x){
+//        
+//    }
 
-});
+}]);

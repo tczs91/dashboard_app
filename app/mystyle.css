@@ -12,3 +12,13 @@ div#filters{
 a.leftnav{
             display:block;
         }
+/*work.html*/
+div.dropdown{
+    display:inline-block;
+}
+div#workviewhead{
+    padding-bottom: 10px;
+}
+div.editanddelete{
+    float:right;
+}
