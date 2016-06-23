@@ -12,7 +12,44 @@ routerApp.controller('workController', function($scope,$http) {
     }, function myError(response) {
        console.log("error");
     });
+   
+    $scope.deleteItem=function(work){
+         $scope.index=-1;
+        $scope.index=$scope.works.indexOf(work);
+    }
+    $scope.confdelete=function(){
+        $scope.works.splice( $scope.index,1);
+    }
+    $scope.disvar=true;
+    $scope.displayCard=function(){
+        $scope.disvar=true;
+    }
+    $scope.displayList=function(){
+        $scope.disvar=false;
+    }
+
+    $scope.addsubmit = function() {
+        var item = {
+//                image: '',
+                title: $scope.addtitle,
+                author: $scope.addauthor,
+                like: $scope.addlike,
+                comment: $scope.addcomment,
+            };
+        $scope.works.push(item);
+    }
+    $scope.edit=function(work){
+        $scope.edititle= work.title;
+        $scope.editauthor= work.author;
+        $scope.editlike= work.like;
+        $scope.editcomment= work.comment;
+        $scope.indexedit=work.id-1;
+    }
+    $scope.editsubmit=function(){
+        $scope.works[$scope.indexedit].title=$scope.edititle;
+        $scope.works[$scope.indexedit].author=$scope.editauthor;
+        $scope.works[$scope.indexedit].like=$scope.editlike;
+        $scope.works[$scope.indexedit].comment=$scope.editcomment;
+    }
+
 });
-//delete(workid){
-//    $("#workid").css("display","none");
-//}

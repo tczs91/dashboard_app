@@ -1,15 +1,57 @@
 <!--no need to embed ng-controller here, already relate controller and work.html in app.js--
     ng-repeat="works in controller ">
 <!--    <ul ng-repeat="work in works" ng-controller="workController">-->
-    <div>
+<div class="dropdown">
+<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">select design<span class="caret"></span></button>
+<ul class="dropdown-menu">
+    <li ng-click="displayCard()"><a href="">card</a></li>
+    <li ng-click="displayList()"><a href="">list</a></li>
+</ul>
+</div>
+    <button class="btn btn-danger" data-toggle="modal" data-target="#addDg">add item</button>
+    <div ng-show="disvar">
         <ul id="{{work.id}}" class="col-md-4" ng-repeat="work in works">
             <li><img class="img" src="{{work.image}}"></li>
             <li>{{work.title}}</li>
             <li>{{work.author}}</li>
             <li>{{work.like}}</li>
             <li>{{work.comment}}</li>
-            <li><button class="btn btn-link">Edit</button>
-                <button class="btn btn-link" data-modal="modal" data-target="#myModal">Delete</button>
-            </li> 
+            <li>
+              <button class="btn btn-link" data-toggle="modal" data-target="#editDg" ng-click="edit(work)">Edit</button>
+              <button ui-sref=".delete" class="btn btn-link" data-toggle="modal" data-target="#myModal" ng-click="deleteItem(work)">Delete</button>
+              <div ui-view></div>
+           </li>
+        </ul>
+    </div><br>
+    <div class="row" ng-hide="disvar">
+        <ul ng-repeat="work in works">
+        <li>{{work.title}}</li>
+        <li>{{work.author}}</li>
+        <li>{{work.like}}</li>
+        <li>{{work.comment}}</li>
         </ul>
     </div>
+<adddirective></adddirective>
+<editdirective></editdirective>
+<!--
+<div class="modal fade" id="addDg" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+       Modal content
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">add item</h4>
+        </div>
+        <div class="modal-body">
+          <p>please input the information</p>
+          <input type="text" >
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">yes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+-->

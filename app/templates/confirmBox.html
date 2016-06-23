@@ -1,17 +1,19 @@
-<div class="modal fade" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-<!--        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>-->
-        <h4 class="modal-title">Delete Box</h4>
+<div class="modal fade" tabindex="-1" id="myModal" role="dialog">
+    <div class="modal-dialog">    
+<!--       Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+<!--          <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+          <h4 class="modal-title">delete</h4>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure to delete</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" ng-click="confdelete()" class="btn btn-default" data-dismiss="modal">yes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Are you sure to delete?</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
-        <button type="button" class="btn btn-primary">yes</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+      
+    </div>
+  </div>

@@ -27,6 +27,17 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/work.html',
             controller:'workController'
         })
+        
+        .state('root.work.delete', {
+            templateUrl: 'templates/confirmBox.html',
+//            controller:'workController'
+        })
+
+//        .state('root.work.additem', {
+//            url: '/additem',
+//            templateUrl: 'templates/addDialog.html',
+////            controller:'workController'
+//        })
     
         .state('root.producer', {
             url: '/producer',
