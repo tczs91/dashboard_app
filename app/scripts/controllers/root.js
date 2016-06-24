@@ -5,18 +5,24 @@
 // Make service calls to log the user out of the app
 // Populate the current date that the user log in
 
-dashApp.controller('rootController', ['$scope','getUserService',function($scope, getUserService) {
+dashApp.controller('rootController', ['$scope','getUserService','authenticateService',function($scope, getUserService, authenticateService) {
+    //call getUser service to retirve user full name and display
     $scope.username = {};
-    var myDate = new Date();
-
     getUserService.getUser()
       .then(function(results) {
               $scope.username = results.data.name;
       }, function(error) {})
         .finally(function() {
      });
+
+    //display current date
     //we can create a string from myDate or
     //just use filter to change the format of myDate
+    var myDate = new Date();
     $scope.currentDate = myDate;
+
+    //when click the button call authentication service to logout the user
+    $scope.logout =function() {}
+
 }]);
 

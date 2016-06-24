@@ -3,13 +3,12 @@
 // Description: Define the following functionalities:
 // Making service calls to login a user
 dashApp.controller('loginController', ['$scope','authenticateService',function($scope, authenticateService) {
-    $scope.username = {};
-    var myDate = new Date();
-
-    getUserService.getUser()
+    var message = '';
+    authenticateService.login('minh','faith')
       .then(function(results) {
-              $scope.username = results.data.name;
-      }, function(error) {})
+              message = results.data.authentication;
+              console.log(message + 'aaaaaaa');
+      }, function(error) {console.log(message + 'bbbbbbb');})
         .finally(function() {
      });
 }]);
