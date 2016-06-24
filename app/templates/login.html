@@ -7,13 +7,13 @@
             <hr>
             <p id = "remind" ng-hide= "reminder">incorrect information, please try again</p>
             <br/>
-            <input id="username" type="text" name="username" placeholder="Username" ng-model="userName" ng-change="formChanged=true" ng-keyup = "key()">
+            <input id="username" type="text" name="username" placeholder="Username" ng-model="userName">
             <br>
             <br>
-            <input id="password" type="password" name="password" placeholder="Password" ng-model="password" ng-change="formChanged=true" ng-keyup = "key()">
+            <input id="password" type="password" name="password" placeholder="Password" ng-model="password">
             <br>
             <br>
-            <button id="button" type="submit" value="Login" ng-click="login()" ng-disabled="!formChanged" ng-style = "one">Login</button>
+            <button id="button" ng-click="login()" type="submit" value="Login">Login</button>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-2"></div>
     </div>

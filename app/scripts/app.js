@@ -9,12 +9,18 @@
  */
 var routerApp = angular.module('routerApp', ['ui.router']);
 routerApp.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/root/work');
+    $urlRouterProvider.otherwise('/login');
     $stateProvider
     // HOME STATES AND NESTED VIEWS ========================================
+        .state('login',{
+        url:'/login',
+        templateUrl:'templates/login.html',
+        controller:'loginController'
+    })
         .state('root', {
             url: '/root',
-            templateUrl: 'templates/root.html'
+            templateUrl: 'templates/root.html',
+            controller:'rootController'
         })
     
         .state('root.overview', {
@@ -40,5 +46,9 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         .state('root.contact', {
             url: '/contact',
             templateUrl: 'templates/contact.html'
+        })
+        .state('notfound', {
+            url: '/notfound',
+            templateUrl: 'templates/404.html'
         })
 });
