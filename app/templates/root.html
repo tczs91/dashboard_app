@@ -1,6 +1,7 @@
 <div class="root_partial">
   <!-- header -->
-  <nav class="navbar navbar-default" id="headerMenu">
+
+  <nav class="navbar navbar-default navbar-fixed-top" id="headerMenu">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#"><img src="assets/images/src/app/logo.png" id="headerLogo"></img></a>
@@ -17,7 +18,7 @@
 
 <!-- side menu test -->
 <div class="col-md-3" role="complementary">
-  <nav class="bs-docs-sidebar hidden-xs hidden-sm affix">
+  <nav class="bs-docs-sidebar hidden-xs hidden-sm">
     <ul class="nav bs-docs-sidenav" id="leftMenu">
         <li>
           <a ui-sref="root.overview"><div>
@@ -50,7 +51,7 @@
 
   </nav>
 </div>
-  <div ui-view></div>
+  <div ui-view class="col-md-9"></div>
 
   </div>
 </div>
