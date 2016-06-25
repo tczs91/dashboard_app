@@ -1,6 +1,7 @@
 #headerMenu {
-margin-bottom: 0px;
+margin-bottom: 20px;
 }
+
 #headerLogo {
   display: inline-block;
   vertical-align: middle;
@@ -9,6 +10,10 @@ margin-bottom: 0px;
 
 #btnLogOut {
   margin-top: 10px;
+}
+
+.bodyDisp {
+  margin-top: 60px;
 }
 
 .bodyDisp #leftMenu img {

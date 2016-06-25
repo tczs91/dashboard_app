@@ -30,11 +30,14 @@
         })
         //root.work view
         .state('root.work', {
-            url: '/list',
+            url: '/work',
             templateUrl: 'templates/work.html',
-            controller: function($scope) {
-                $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
-            }
+            controller: 'workController'
+        })
+        //root.work.delete view
+        .state('root.work.delete', {
+            templateUrl: 'templates/confirmBox.html',
+//            controller:'workController'
         })
         //root.overview view
         .state('root.overview', {
@@ -50,5 +53,10 @@
         .state('root.contact', {
             url: '/contact',
             templateUrl: 'templates/contact.html'
+        })
+        //404 not found view
+        .state('notfound', {
+            url: '/notfound',
+            templateUrl: 'templates/404.html'
         })
 });

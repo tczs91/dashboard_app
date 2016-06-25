@@ -1,0 +1,23 @@
+<div class="modal fade" id="editDg" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+<!--       Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">edit item</h4>
+        </div>
+        <div class="modal-body">
+          <p>please eidt the information</p>
+          <input type="text" ng-model="edititle" placeholder="Title">
+          <input type="text" ng-model="editauthor" placeholder="Auther">
+          <input type="text" ng-model="editlike" placeholder="Like">
+          <input type="text" ng-model="editcomment" placeholder="Comment">
+        </div>
+        <div class="modal-footer">
+          <button type="button" ng-click="editsubmit()" class="btn btn-default" data-dismiss="modal">confirm</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
