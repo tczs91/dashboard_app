@@ -45,3 +45,6 @@ margin-bottom: 20px;
   color: red;
 }
 
+.bodyDisp #leftMenu li.active span{
+  color: red;
+}
