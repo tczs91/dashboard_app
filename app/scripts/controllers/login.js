@@ -2,14 +2,8 @@
 // LOGIN CONTROLLER
 // Description: Define the following functionalities:
 // Making service calls to login a user
-dashApp.controller('loginController', ['$scope','authenticateService',function($scope, authenticateService) {
+dashApp.controller('loginController', ['$scope','$state','authenticateService',function($scope, $state, authenticateService) {
     var message = '';
-    authenticateService.login('minh','faith')
-      .then(function(results) {
-              message = results.data.authentication;
-              console.log(message + 'aaaaaaa');
-      }, function(error) {console.log(message + 'bbbbbbb');})
-        .finally(function() {
-     });
+    $scope.login = authenticateService.login;
 }]);
 
