@@ -7,7 +7,9 @@ dashApp.service('authenticateService', ['$http','$state','sessionService',functi
       //make the http post and send the username&password pair to serve and
       //receive the login result
       var message = '';
-      this.login = function (userName,password) {
+      this.login = function () {
+        var userName = this.inputUsername;
+        var password = this.inputPwd;
         return $http({
                     url: '/api/login',
                     method: "POST",
@@ -21,6 +23,7 @@ dashApp.service('authenticateService', ['$http','$state','sessionService',functi
                         'username': userName,
                         'password': password
                     };
+                      //console.log(userObj);
                       //convert the user objecet to string
                       //because session storage accepts only string value
                       var stringUser = JSON.stringify(userObj);
@@ -53,10 +56,16 @@ dashApp.service('authenticateService', ['$http','$state','sessionService',functi
 
         //is logged in
         //if userString is not null, the user is logged in
-        if(undefined == userString) {
-            return false;
+        // if(undefined == userString || null == userString) {
+        //     return false;
+        // } else {
+        //     return true;
+        // }
+        console.log(userString);
+        if(userString) {
+          return true;
         } else {
-            return true;
+          return false;
         }
     }
 }]);
