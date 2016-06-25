@@ -1,0 +1,56 @@
+<div class="root_partial">
+  <!-- header -->
+  <nav class="navbar navbar-default" id="headerMenu">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="assets/images/src/app/logo.png" id="headerLogo"></img></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="">{{username}}</a></li>
+      <li><a href="">{{currentDate | date:'MM/d/yyyy'}}</a></li>
+    </ul>
+    <button type="button" class="btn btn-default pull-right" id="btnLogOut" ng-click="logout()">Log Out</button>
+  </div>
+</nav>
+  <!-- body display -->
+  <div class="bodyDisp">
+
+<!-- side menu test -->
+<div class="col-md-3" role="complementary">
+  <nav class="bs-docs-sidebar hidden-xs hidden-sm affix">
+    <ul class="nav bs-docs-sidenav" id="leftMenu">
+        <li>
+          <a ui-sref="root.overview"><div>
+          <img src="assets/images/src/app/logo.png"></img>
+          <p>Overview</p>
+          </div></a>
+        </li>
+
+        <li class="active">
+          <a ui-sref="root.work"><div>
+          <img src="assets/images/src/app/logo.png"></img>
+          <p>Work</p>
+          </div></a>
+        </li>
+
+        <li>
+          <a ui-sref="root.producer"><div>
+          <img src="assets/images/src/app/logo.png"></img>
+          <p>Producer</p>
+          </div></a>
+        </li>
+
+        <li>
+          <a ui-sref="root.contact"><div>
+          <img src="assets/images/src/app/logo.png"></img>
+          <p>Contact</p>
+          </div></a>
+        </li>
+    </ul>
+
+  </nav>
+</div>
+  <div ui-view></div>
+
+  </div>
+</div>

@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='dashApp'>
 <head>
   <meta charset="UTF-8">
   <title>Dashboard App</title>
+  <!-- import angularJs -->
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <!-- import jQuery -->
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <!--  import ui-router -->
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <!-- import bootstrape -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- import the user customized file css files -->
+  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+  <!-- import the user customized file js files -->
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <!-- the services -->
+  <script type="text/javascript" src="scripts/services/getUser.js"></script>
+  <script type="text/javascript" src="scripts/services/authenticate.js"></script>
+  <script type="text/javascript" src="scripts/services/session.js"></script>
+ <!--  the controllers -->
+  <script type="text/javascript" src="scripts/controllers/root.js"></script>
+  <script type="text/javascript" src="scripts/controllers/login.js"></script>
+  <script type="text/javascript" src="scripts/controllers/work.js"></script>
+
+
 </head>
 <body>
+  <div class="bodyContainer">
+        <div ui-view>
 
+        </div>
+    </div>
 </body>
 </html>

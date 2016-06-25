@@ -1,0 +1,554 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"inline",
+				"inline"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"fal",
+				"false"
+			],
+			[
+				"form",
+				"formFlag"
+			],
+			[
+				"re",
+				"required	Attr"
+			],
+			[
+				"date",
+				"dateConverted"
+			],
+			[
+				"inpu",
+				"inputDate"
+			],
+			[
+				"in",
+				"inputDate"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"e",
+				"errorMsg"
+			],
+			[
+				"pro",
+				"prop"
+			],
+			[
+				"this",
+				"thisElem"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"is",
+				"isChecked"
+			],
+			[
+				"dis",
+				"disPlay"
+			],
+			[
+				"the",
+				"theTiles"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
+				"each",
+				"eachTile"
+			],
+			[
+				"eac",
+				"eachTile"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"check",
+				"checkboxName"
+			],
+			[
+				"che",
+				"checkBox"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"c",
+				"class"
+			],
+			[
+				"tile",
+				"tileCheck"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"load",
+				"loadTiles"
+			],
+			[
+				"cus",
+				"customCheckbox"
+			],
+			[
+				"wra",
+				"flex-wrap"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"h",
+				"h3	Tag"
+			],
+			[
+				"shaw",
+				"box-shadow"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"ap",
+				"appendTo"
+			],
+			[
+				"fo",
+				"forEach"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"ge",
+				"getElemnetById"
+			],
+			[
+				"min",
+				"min"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"tra",
+				"translateX()"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"lay",
+				"display"
+			],
+			[
+				"mari",
+				"margin"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"fol",
+				"float"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"list-s",
+				"list-style-type"
+			],
+			[
+				"st",
+				"style	Attr"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"b",
+				"br"
+			],
+			[
+				"button",
+				"buttonName"
+			],
+			[
+				"butt",
+				"buttonName"
+			],
+			[
+				"onc",
+				"onclick	Attr"
+			],
+			[
+				"w",
+				"write"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 359.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 417.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Theon_Z/Documents/Git_Projects/dashboard_app/app/templates/addDialog.html",
+		"/Users/Theon_Z/Documents/Git_Projects/angular_demo/ui-router/app.js",
+		"/Users/Theon_Z/Documents/Git_Projects/angular_demo/ui-router/index.html",
+		"/Users/Theon_Z/Documents/Git_Projects/dashboard_app/app/templates/root.html",
+		"/Users/Theon_Z/Documents/Git_Projects/dashboard_app/app/templates/login.html",
+		"/Users/Theon_Z/Documents/Git_Projects/dashboard_app/app/scripts/app.js",
+		"/Users/Theon_Z/Documents/Git_Projects/dashboard_app/app/index.html",
+		"/Users/Theon_Z/Documents/Git_Projects/dashboard-10.1/app/index.html",
+		"/Users/Theon_Z/Documents/Git_Projects/dashboard-10.1/app/assets/styles/contact.css",
+		"/Users/Theon_Z/Desktop/ui101_week3_[Song_Zhang]/enhanced_display/css/custom/global.css",
+		"/Users/Theon_Z/Desktop/ui101_week3_[Song_Zhang]/enhanced_display/enhanced_display.html",
+		"/Users/Theon_Z/Desktop/ui101_week3_[Song_Zhang]/form_validation/form_validation.html",
+		"/Users/Theon_Z/Desktop/ui101_week3_[Song_Zhang]/form_validation/css/custom.css",
+		"/Users/Theon_Z/Desktop/ui101_week3_[Song_Zhang]/form_validation/js/custom/input_validation.js",
+		"/Users/Theon_Z/Desktop/ui101_week3_[Song_Zhang]/form_validation/link/success.html",
+		"/Users/Theon_Z/Desktop/ui101_week3_[Song_Zhang]/form_validation/link/untitled",
+		"/Users/Theon_Z/Desktop/ui101_week3_[Song_Zhang]/form_validation/js/vendors/jquery-1.11.1.min.js",
+		"/Users/Theon_Z/Downloads/ui101_week1_[Song_Zhang]/form_creation/form_creation.html",
+		"/Users/Theon_Z/Desktop/ui101_week2_[Song_Zhang]/mobile_tiles/css/custom/custom_index.css",
+		"/Users/Theon_Z/Desktop/ui101_week2_[Song_Zhang]/mobile_tiles/js/custom/loadJSON.js",
+		"/Users/Theon_Z/Desktop/ui101_week2_[Song_Zhang]/mobile_tiles/mobile_tiles.html",
+		"/Users/Theon_Z/Desktop/ui101_week2_[Song_Zhang]/mobile_tiles/_submit.scss",
+		"/Users/Theon_Z/Desktop/ui101_week2_[Song_Zhang]/mobile_tiles/test.scss",
+		"/Users/Theon_Z/Downloads/custom-checkboxes/simple/index.html",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/mobile_tiles/js/custom/loadJSON.js",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/mobile_tiles/mobile_tiles.html",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/mobile_tiles/css/custom/custom_index.css",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/mobile_tiles/js/vendors/jquery-ui-1.11.4.min.js",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/mobile_tiles/js/vendors/jquery-1.11.3.min.js",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/mobile_tiles/json/tiles.json",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/mobile_tiles/css/vendors/normalize.css",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/analog_clock/analog_clock.html",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/analog_clock/css/global.css",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/analog_clock/js/analog.js",
+		"/Users/Theon_Z/Desktop/ui101 week2 [Song_Zhang]/analog_clock/global.css",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/beautiful_display/css/global.css",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/beautiful_display/beautiful_display.html",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/beautiful_display/images/logos/1.png",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/beautiful_display/images/icons/up.png",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/beautiful_display/images/icons/up_hover.png",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/beautiful_display/images/icons/down.png",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/beautiful_display/images/icons/down_hover.png",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/beautiful_display/images/icons/heart.png",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/beautiful_display/images/icons/it.png",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/form_creation/form_creation.html",
+		"/Users/Theon_Z/Desktop/ui101_week1_[Song_Zhang]/form_creation/css/base_styles.css",
+		"/Users/Theon_Z/Desktop/Technomax-batch-10-training/Week 01/ASG_week_1/ui_assignment_week_1.tex",
+		"/Users/Theon_Z/Documents/UI_Learning/index.html",
+		"/Users/Theon_Z/Documents/UI_Learning/jsTest.html"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"'));",
+			"%;\n",
+			" >",
+			"select"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "README.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 178.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
