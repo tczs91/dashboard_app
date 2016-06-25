@@ -42,6 +42,15 @@ dashApp.controller('rootController', ['$state','$scope','getUserService','authen
           $scope.logout =function() {
             authenticateService.logout();
           }
+          //change the activate li
+           $('#leftMenu li').click(function() {
+             //Removes the active class from any <li> elements
+            $('#leftMenu li.active').removeClass('active');
+            //Adds it to the current element
+            $(this).addClass('active');
+          });
+
+          //go to work view
           $state.transitionTo('root.work');
     }else {
           $state.transitionTo('login');
