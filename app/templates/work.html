@@ -34,7 +34,7 @@
         <table>
               <tr>
                 <th ng-click="orderByMe('title')">Title</th>
-                <th ng-click="orderByMe('author')">Author</th> 
+                <th ng-click="orderByMe('author')">Author</th>
                 <th>Like</th>
                 <th>comment</th>
                 <th>modify</th>
@@ -42,7 +42,7 @@
             </tr>
             <tr ng-repeat="work in works|filter:search|orderBy:myOrderBy">
                 <td>{{work.title}}</td>
-                <td>{{work.author}}</td> 
+                <td>{{work.author}}</td>
                 <td>{{work.like}}</td>
                 <td>{{work.comment}}</td>
                 <td><button class="btn btn-link" data-toggle="modal" data-target="#editDg" ng-click="edit(work)">Edit</button></td>

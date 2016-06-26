@@ -1,21 +1,14 @@
-<div class="container" id = "log">
-<form>
-    <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-2"></div>
-        <div ng-init="myButton=true" id="login" class="col-md-4 col-sm-4 col-xs-8">
-            <p><b>Login</b></p>
-            <hr>
-            <p id = "remind" ng-hide= "reminder">incorrect information, please try again</p>
-            <br/>
-            <input id="username" type="text" name="username" placeholder="Username" ng-model="userName">
-            <br>
-            <br>
-            <input id="password" type="password" name="password" placeholder="Password" ng-model="password">
-            <br>
-            <br>
-            <button id="button" ng-click="login()" type="submit" value="Login">Login</button>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-2"></div>
+<div class="background">
+
+<div class="login_page">
+  <div class="form">
+    <div class="login_text">
+    <h1>Login</h1>
     </div>
-</form>
+    <form class="loginForm">
+      <input type="text" ng-model='inputUsername' placeholder="username" required/>
+      <input type="password" ng-model='inputPwd' placeholder="password" required/>
+      <button type="button" class="btn btn-default pull-right" id="btnLogin" ng-click="login()" ng-disabled="loginForm.$invalid">login</button>
+    </form>
+  </div>
 </div>

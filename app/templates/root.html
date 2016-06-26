@@ -1,21 +1,58 @@
+<div class="root_partial">
+  <!-- header -->
 
-<div class="head">
-    <div>pic</div>
-    <div>{{userName}}</div>
-    <div>{{date}}</div>
-    <button type="button" ng-click="logout()">login out</button>
+  <nav class="navbar navbar-default navbar-fixed-top" id="headerMenu">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="assets/images/src/app/logo.png" id="headerLogo"></img></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="">{{username}}</a></li>
+      <li><a href="">{{currentDate | date:'MM/d/yyyy'}}</a></li>
+    </ul>
+    <button type="button" class="btn btn-default pull-right" id="btnLogOut" ng-click="logout()">Log Out</button>
+  </div>
+</nav>
+  <!-- body display -->
+  <div class="bodyDisp">
+
+<!-- side menu test -->
+<div class="col-md-3" role="complementary">
+  <nav class="bs-docs-sidebar hidden-xs hidden-sm">
+    <ul class="nav bs-docs-sidenav" id="leftMenu">
+        <li role="presentation">
+          <a ui-sref="root.overview" role="tab"><div>
+          <span class="glyphicon glyphicon-cloud"></span>
+          <p>Overview</p>
+          </div></a>
+        </li>
+
+        <li class="active" role="presentation">
+          <a ui-sref="root.work" role="tab"><div>
+          <span class="glyphicon glyphicon-tags"></span>
+          <p>Work</p>
+          </div></a>
+        </li>
+
+        <li role="presentation">
+          <a ui-sref="root.producer" role="tab"><div>
+          <!-- <img src="assets/images/src/app/logo.png"></img> -->
+          <span class="glyphicon glyphicon-tint"></span>
+          <p>Producer</p>
+          </div></a>
+        </li>
+
+        <li role="presentation">
+          <a ui-sref="root.contact" role="tab"><div>
+          <span class="glyphicon glyphicon-th-large"></span>
+          <p>Contact</p>
+          </div></a>
+        </li>
+    </ul>
+
+  </nav>
 </div>
+  <div ui-view class="col-md-9"></div>
 
-
-<div class="row">
-<!--        four nav bars-->
-        <div class="col-md-2">
-                <a class="leftnav" ui-sref=".overview">Overview</a>
-                <a class="leftnav" ui-sref=".work">Work</a>
-                <a class="leftnav" ui-sref=".producer">Producer</a>
-                <a class="leftnav" ui-sref=".contact">Contact</a>
-        </div>
-        <div class="col-md-10">
-            <div ui-view></div>
-        </div>
+  </div>
 </div>

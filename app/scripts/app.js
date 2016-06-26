@@ -7,46 +7,54 @@
  *
  * Main module of the application. Define the routing architecture for the app
  */
-var routerApp = angular.module('routerApp', ['ui.router']);
-routerApp.config(function($stateProvider, $urlRouterProvider) {
+
+ var dashApp = angular.module('dashApp', ['ui.router']);
+
+
+
+ dashApp.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/login');
     $stateProvider
-    // HOME STATES AND NESTED VIEWS ========================================
-        .state('login',{
-        url:'/login',
-        templateUrl:'templates/login.html',
-        controller:'loginController'
-    })
+    // INDEX STATES AND NESTED VIEWS ========================================
+        //login view
+        .state('login', {
+            url: '/login',
+            templateUrl: 'templates/login.html',
+            controller: 'loginController'
+        })
+        //root view
         .state('root', {
             url: '/root',
             templateUrl: 'templates/root.html',
-            controller:'rootController'
+            controller: 'rootController'
         })
-    
-        .state('root.overview', {
-            url: '/overview',
-            templateUrl: 'templates/overview.html'
-        })
-    
+        //root.work view
         .state('root.work', {
             url: '/work',
             templateUrl: 'templates/work.html',
-            controller:'workController'
+            controller: 'workController'
         })
-        
+        //root.work.delete view
         .state('root.work.delete', {
             templateUrl: 'templates/confirmBox.html',
 //            controller:'workController'
         })
-
+        //root.overview view
+        .state('root.overview', {
+            url: '/overview',
+            templateUrl: 'templates/overview.html',
+        })
+        //root.producer view
         .state('root.producer', {
             url: '/producer',
-            templateUrl: 'templates/producer.html'
+            templateUrl: 'templates/producer.html',
         })
+        //root.contact view
         .state('root.contact', {
             url: '/contact',
             templateUrl: 'templates/contact.html'
         })
+        //404 not found view
         .state('notfound', {
             url: '/notfound',
             templateUrl: 'templates/404.html'

@@ -1,0 +1,50 @@
+#headerMenu {
+margin-bottom: 20px;
+}
+
+#headerLogo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -7px;
+}
+
+#btnLogOut {
+  margin-top: 10px;
+}
+
+.bodyDisp {
+  margin-top: 60px;
+}
+
+.bodyDisp #leftMenu span {
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.bodyDisp #leftMenu li {
+  padding-right: 10px;
+}
+
+.bodyDisp #leftMenu div p{
+  display: inline-block;
+}
+
+.bodyDisp #leftMenu div span {
+  display: inline-block;
+}
+
+.bodyDisp #leftMenu li:hover p{
+  color: white;
+}
+
+.bodyDisp #leftMenu li.active {
+  border-left: 2px solid red;
+}
+
+.bodyDisp #leftMenu li.active p{
+  color: red;
+}
+
+.bodyDisp #leftMenu li.active span{
+  color: red;
+}

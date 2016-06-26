@@ -1,0 +1,24 @@
+ul.col-md-4{
+        list-style-type: none;
+        }
+
+img.img{
+            width:100%;
+            height:60%;
+        }
+div#filters{
+            display:inline-block;
+        }
+/*a.leftnav{
+            display:block;
+        }*/
+/*work.html*/
+div.dropdown{
+    display:inline-block;
+}
+div#workviewhead{
+    padding-bottom: 10px;
+}
+div.editanddelete{
+    float:right;
+}

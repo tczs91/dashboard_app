@@ -1,48 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='dashApp'>
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard App</title>
+  <!-- import angularJs -->
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <!-- import jQuery -->
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <!--  import ui-router -->
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <!-- import bootstrape -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- import the user customized file css files -->
+  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/work.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/login.css">
+  <!-- import the user customized file js files -->
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <!-- the services -->
+  <script type="text/javascript" src="scripts/services/getUser.js"></script>
+  <script type="text/javascript" src="scripts/services/authenticate.js"></script>
+  <script type="text/javascript" src="scripts/services/session.js"></script>
+ <!--  the controllers -->
+  <script type="text/javascript" src="scripts/controllers/root.js"></script>
+  <script type="text/javascript" src="scripts/controllers/login.js"></script>
+  <script type="text/javascript" src="scripts/controllers/work.js"></script>
 
-<head>   
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
- <!-- import angularJs -->
-<!-- <script src="../bower_components/angular/angular.min.js"></script>-->
- <!-- import jQuery -->
-<!-- <script src="../bower_components/jquery/dist/jquery.min.js"></script>-->
- <!--  import ui-router -->
-<!-- <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>-->
- <!-- import bootstrape -->
- <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
- <!--<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
- <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/work.js"></script>
-    <script src="scripts/directives/dialog.js"></script>
-    <script src="scripts/controllers/login.js"></script>
-    <script src="scripts/services/authenticate.js"></script>
-    <script src="scripts/services/session.js"></script>
-    <script src="scripts/controllers/root.js"></script>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <!-- the directives -->
+  <script type="text/javascript" src="scripts/directives/dialog.js"></script>
+
 </head>
-<!-- apply our angular app to our site -->
+<body>
+  <div class="bodyContainer">
+        <div ui-view class="uiContainer">
 
-<body ng-app="routerApp">
-    <!-- MAIN CONTENT -->
-    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
-    <div class="container-fluid">
-        <div ui-view></div>
+        </div>
     </div>
-<!--
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/work.js"></script>
-    <script src="scripts/directives/dialog.js"></script>
-    <script src="scripts/controllers/login.js"></script>
-    <script src="scripts/services/authenticate.js"></script>
-    <script src="scripts/services/session.js"></script>
--->
-<!--     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">-->
 </body>
-
 </html>

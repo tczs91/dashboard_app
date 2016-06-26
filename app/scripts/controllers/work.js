@@ -2,7 +2,7 @@
 // WORK CONTROLLER
 // Description: Define the following functionalities:
 // All the functionalities on the "Work" section to display items and filter them
-routerApp.controller('workController',['$scope','$http','$filter', function($scope,$http,$filter) {
+dashApp.controller('workController',['$scope','$http','$filter', function($scope,$http,$filter) {
     $http({
         method : "GET",
         //api is to find router folder in server
@@ -12,7 +12,7 @@ routerApp.controller('workController',['$scope','$http','$filter', function($sco
     }, function myError(response) {
        console.log("error");
     });
-   
+
     $scope.deleteItem=function(work){
          $scope.index=-1;
         $scope.index=$scope.works.indexOf(work);
@@ -54,7 +54,7 @@ routerApp.controller('workController',['$scope','$http','$filter', function($sco
         $scope.myOrderBy = x;
     }
 //    $scope.orderlike=function(x){
-//        
+//
 //    }
 
 }]);
