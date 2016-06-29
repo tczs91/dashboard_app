@@ -8,12 +8,12 @@
  * Main module of the application. Define the routing architecture for the app
  */
 
- var dashApp = angular.module('dashApp', ['ui.router']);
+ var dashApp = angular.module('dashApp', ['ui.router','ui.bootstrap']);
 
 
 
  dashApp.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/root/contact');
     $stateProvider
     // INDEX STATES AND NESTED VIEWS ========================================
         //login view
@@ -52,7 +52,8 @@
         //root.contact view
         .state('root.contact', {
             url: '/contact',
-            templateUrl: 'templates/contact.html'
+            templateUrl: 'templates/contact.html',
+            controller:'contactController'
         })
         //404 not found view
         .state('notfound', {

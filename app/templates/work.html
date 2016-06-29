@@ -12,11 +12,11 @@
     <button class="btn btn-danger" data-toggle="modal" data-target="#addDg">add item</button>
     <input type="text" ng-model="search.title" placeholder="title">
     <input type="text" ng-model="search.author" placeholder="author">
-    <input type="text" ng-model="search.like" ng-focus="orderByMe(like)" placeholder="like">
-    <input type="text" ng-model="search.comment" placeholder="comment">
+    <input type="text" ng-model="search.like" placeholder="like">
+    <input type="text" ng-model="comment" placeholder="comment">
 </div>
     <div ng-show="disvar">
-        <ul id="{{work.id}}" class="col-md-4" ng-repeat="work in works|filter:search">
+        <ul id="{{work.id}}" class="col-md-4" ng-repeat="work in works|filter:search|filter:filterFn">
             <li><img class="img" src="{{work.image}}"></li>
             <li>{{work.title}}</li>
             <li>{{work.author}}</li>
@@ -35,12 +35,12 @@
               <tr>
                 <th ng-click="orderByMe('title')">Title</th>
                 <th ng-click="orderByMe('author')">Author</th>
-                <th>Like</th>
-                <th>comment</th>
+                <th ng-click="orderByMe('like')">Like</th>
+                <th ng-click="orderByMe('comment')">comment</th>
                 <th>modify</th>
                 <th>delete</th>
             </tr>
-            <tr ng-repeat="work in works|filter:search|orderBy:myOrderBy">
+            <tr ng-repeat="work in works|filter:search|filter:filterFn|orderBy:myOrderBy">
                 <td>{{work.title}}</td>
                 <td>{{work.author}}</td>
                 <td>{{work.like}}</td>

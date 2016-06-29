@@ -1,1 +1,91 @@
+<!--three components forms-->
 <h1>Contact</h1>
+<!--disabled="true" is valid only button,input,textarea
+    disable="true" valid tabs-->
+<uib-tabset InformationActive="true" active="InformationActive">
+    <uib-tab index="0" heading="Information">
+        <form name="Information">
+        <label>First Name</label> 
+        <div class="form-group has-feedback">
+            <input class="form-control" type="text" placeholder="First Name" name="fname" ng-model='fname' required/>
+            <span class="glyphicon glyphicon-tree-conifer form-control-feedback"></span>
+        </div>
+              
+        <label>Last Name</label> 
+        <div class="form-group has-feedback">           
+            <input type="text" placeholder="Last Name" class="form-control" required ng-model='lname'>
+            <span class="glyphicon glyphicon-tree-deciduous form-control-feedback"></span>
+        </div>
+                
+        <label>Email</label>
+        <div class="form-group has-feedback">
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            <input type="email" placeholder="Email" class="form-control" id="addit" required ng-model='email'>
+        </div>
+               
+        <label>Phone</label>
+        <div class="form-group has-feedback">
+            <span class="glyphicon glyphicon-earphone form-control-feedback"></span>
+            <input type="text" placeholder="Phone" class="form-control" id="addit" required ng-model='phone'>
+        </div>
+        
+        <label>location</label>
+        <div class="form-group has-feedback">
+            <select class="form-control" name="location" ng-model="location" ng-options="location.title for location in locations">
+		    </select>
+        </div>
+        
+        <div class="form-group has-feedback">
+            <p class="alert alert-success">The current time is:{{nowtime|date:'medium'}}</p>
+        </div>
+        </form>
+        
+        <button class="btn btn-info" type="submit" ng-disabled="!Information.$valid" ng-click="queryActive=true">next</button>
+        </uib-tab>
+    <uib-tab index="1" heading="Query" disable="!Information.$valid" active="queryActive">
+        <form name="Query">
+        <label>Title</label> 
+        <div class="form-group has-feedback">
+            <input class="form-control" type="text" placeholder="Title" name="title" ng-model='title' required/>
+            <span class="glyphicon glyphicon-tree-conifer form-control-feedback"></span>
+        </div>
+       <label>Content</label>
+       <div class="form-group">
+            <textarea type="text" rows="6" placeholder="Contents of the query should go here.." class="form-control" id="addit" ng-model="content"></textarea>
+       </div>
+        <label>Category</label>
+        <div class="form-group has-feedback">
+            <select class="form-control" name="category" ng-model="category" ng-options="category.title for category in categories" required>
+		    </select>
+        </div>
+        <label>Priority</label>
+        <uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating" required></uib-rating>
+        <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span><br>
+        <button class="btn btn-info" type="submit" ng-disabled="!Query.$valid" ng-click="confirmationActive=true">next</button>
+        </form>
+    </uib-tab>
+    <uib-tab index="2" heading="Confirmation" disable="!Query.$valid" active="confirmationActive">
+         <div>
+            <div>Here is the confirmation for your query, if everything is correct, feel free to send it to us. We would love to take a look and will get back to you as soon as possible. In the meantime, you can send the confirmation to your email by clicking on the 'Mail To" link</div>
+            <label>Confirmation ID</label>
+            <div>#{{randomNum}}</div>
+            <label>Confirmation Date</label>
+            <div>{{nowtime | date:'medium' }}</div>
+            <label>Confirmation Detail</label>
+            <pre>
+        =====Information=====
+        Full Name:{{fname+' '+lname}}
+        Email:{{email}}
+        Phone:{{phone}}
+        Location:{{location.title}}
+        =====Query=====
+        Title:{{title}}
+        Category:{{category.title}}
+        Priority:{{priority(rate)}}
+        Content:{{content}}
+            </pre>
+             <div>mailto:</div>
+             <a href="mailto:{{email}}" blank="_target">{{fname+' '+lname}}</a>
+        </div>
+    </uib-tab>
+</uib-tabset>

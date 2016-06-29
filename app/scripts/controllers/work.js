@@ -51,10 +51,19 @@ dashApp.controller('workController',['$scope','$http','$filter', function($scope
         $scope.works[$scope.indexedit].comment=$scope.editcomment;
     }
     $scope.orderByMe = function(x) {
+//        if(x=="comment"){
+//        var commentOrd=$scope.work.comment.split(' ')[0];
+//        var commentOrdInt=parseInt(commentOrd);
+//        $scope.myOrderBy = commentOrdInt;
+//        }
         $scope.myOrderBy = x;
     }
-//    $scope.orderlike=function(x){
-//
-//    }
+    $scope.filterFn=function(work){
+        if(!$scope.comment){return true;}       
+        var cmt=$scope.comment;
+        var likeString=work.comment.split(' ')[0];
+        var likeInt=parseInt(likeString);
+        return (likeInt>cmt);
+    }
 
 }]);
