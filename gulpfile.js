@@ -8,10 +8,11 @@ var   sourcemaps   = require('gulp-sourcemaps');
 const del          = require('del');
 var   changed      = require('gulp-changed');
 var   merge        = require('merge-stream');
+var stylish = require('jshint-stylish');
 
 //default task
 //the defualt will be stated by using just 'gulp' in bash
-gulp.task('default', ['scripts','styles','watch']);
+gulp.task('default', ['styles','imagemin','clean','jshint','watch']);
 
 //styles task (First task)
 gulp.task('styles', function(){
@@ -60,3 +61,13 @@ gulp.task('clean', function(){
     'app/assets/images/build/**/*', 'app/assets/images/build'
   ]);
 });
+
+//jshint
+gulp.task('jshint', function() {
+  return gulp.src('./app/scripts/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish'))
+    .pipe(jshint.reporter('fail'));
+});
+
+//
