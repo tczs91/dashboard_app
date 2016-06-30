@@ -9,9 +9,6 @@
  */
 
  var dashApp = angular.module('dashApp', ['ui.router','ui.bootstrap']);
-
-
-
  dashApp.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/root/contact');
     $stateProvider
@@ -43,6 +40,7 @@
         .state('root.overview', {
             url: '/overview',
             templateUrl: 'templates/overview.html',
+            controller:'overviewController'
         })
         //root.producer view
         .state('root.producer', {

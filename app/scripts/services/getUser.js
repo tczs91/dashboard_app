@@ -8,6 +8,8 @@ var userString = sessionService.getSession('userSession');
                 return $http({
                     url: '/api/getuser',
                     method: "GET",
+//                    username as parameter passed in the function
+//                    params user is assigned by username,means res.query.user<==username
                     params: {'user': username}
                 }).success(function(res) {
                     console.log("Success!");

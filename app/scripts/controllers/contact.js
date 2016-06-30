@@ -2,27 +2,22 @@
 // CONTACT CONTROLLER
 // Description: Define the following functionalities:
 // All the functionalities on the "Contact" section for the form
-dashApp.controller('contactController',['$scope','$http',function($scope,$http) {
-//    var locationlist=function(){
-            $http({
-                method : "GET",
-                //api is to find router folder in server
-                url : "/api/location"
-            }).then(function mySucces(response) {
-            $scope.locations = response.data.locations;
-            }, function myError(response) {
-            console.log("error");
-    });      
-//    }
-             $http({
-                method : "GET",
-                //api is to find router folder in server
-                url : "/api/category"
-            }).then(function mySucces(response) {
-            $scope.categories = response.data.categories;
-            }, function myError(response) {
-            console.log("error");
-    });      
+dashApp.controller('contactController',['$scope','$http','contactService',function($scope,$http,contactService) {
+      contactService.getLocation()
+          .then(function(results) {
+                  $scope.locations = results;
+//                  console.log('locations are ' + $scope.locations);
+            }, function(error) {})
+              .finally(function() {
+           });
+     
+    contactService.getCategory()
+          .then(function(results) {
+                  $scope.categories = results;
+            }, function(error) {})
+              .finally(function() {
+           });
+    
     $scope.nowtime= new Date();  
     $scope.rate = 7;
     $scope.max = 10;

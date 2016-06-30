@@ -40,7 +40,7 @@
         </div>
         </form>
         
-        <button class="btn btn-info" type="submit" ng-disabled="!Information.$valid" ng-click="queryActive=true">next</button>
+        <button class="btn btn-info" type="submit" ng-disabled="!Information.$valid" ng-init="queryActive=false" ng-click="queryActive=true">next</button>
         </uib-tab>
     <uib-tab index="1" heading="Query" disable="!Information.$valid" active="queryActive">
         <form name="Query">
