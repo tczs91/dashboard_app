@@ -29,11 +29,11 @@ dashApp.service('authenticateService', ['$http','$state','sessionService',functi
                       var stringUser = JSON.stringify(userObj);
                       //call set session to creat the user session
                       sessionService.setSession('userSession', stringUser);
-                      alert("Login Successfully!");
+                      //alert("Login Successfully!");
                       //change the state to root view
                       $state.transitionTo('root');
                 }).error(function(res) {
-                    console.log(message + ' bbbbbbb');
+                    //console.log(message + ' bbbbbbb');
                 });
     }
 

@@ -23,7 +23,7 @@ dashApp.controller('rootController', ['$state','$scope','getUserService','authen
           getUserService.getFullname(userName)
           .then(function(results) {
                   fullName = results.data.name;
-                  console.log('your fullname is ' + fullName);
+                  //console.log('your fullname is ' + fullName);
                   $scope.username = fullName;
             }, function(error) {})
               .finally(function() {
@@ -51,9 +51,9 @@ dashApp.controller('rootController', ['$state','$scope','getUserService','authen
           });
 
           //go to work view
-          $state.transitionTo('root.work');
+          $state.go('root.overview');
     }else {
-          $state.transitionTo('login');
+          $state.go('login');
     }
 }]);
 
