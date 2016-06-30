@@ -7,7 +7,6 @@ var   autoprefixer = require('gulp-autoprefixer');
 var   sourcemaps   = require('gulp-sourcemaps');
 const del          = require('del');
 var   changed      = require('gulp-changed');
-var   merge        = require('merge-stream');
 var   stylish      = require('jshint-stylish');
 
 //default task
