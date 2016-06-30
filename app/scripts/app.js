@@ -37,12 +37,12 @@
         //root.work.delete view
         .state('root.work.delete', {
             templateUrl: 'templates/confirmBox.html',
-//            controller:'workController'
         })
         //root.overview view
         .state('root.overview', {
             url: '/overview',
             templateUrl: 'templates/overview.html',
+            controller: 'overviewController',
         })
         //root.producer view
         .state('root.producer', {
