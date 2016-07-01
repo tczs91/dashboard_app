@@ -1,8 +1,34 @@
-#overview_partial  div {
-  width: 100%;
-  height: 100%;
+#overview_partial {
+  margin-top: 0;
 }
 
-#overview_partial div.dispContent {
-  margin-left: 40px;
+#overview_partial #dispContent {
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#overview_partial #uName {
+  font-weight: bold;
+}
+
+#overview_partial div#sectionAccordion {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: -40px;
+}
+
+#overview_partial div#sectionAccordion .section {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#overview_partial p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#overview_partial img#iProfImg {
+  width: 140px;
+  height: auto;
 }

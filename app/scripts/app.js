@@ -8,7 +8,7 @@
  * Main module of the application. Define the routing architecture for the app
  */
 
- var dashApp = angular.module('dashApp', ['ui.router']);
+ var dashApp = angular.module('dashApp', ['ui.router','ngAnimate', 'ui.bootstrap']);
 
 
 
