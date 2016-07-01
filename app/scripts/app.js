@@ -52,7 +52,8 @@
         //root.contact view
         .state('root.contact', {
             url: '/contact',
-            templateUrl: 'templates/contact.html'
+            templateUrl: 'templates/contact.html',
+            controller:'contactController'
         })
         //404 not found view
         .state('notfound', {
